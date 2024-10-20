@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Syllabus Form</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+            h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+            nav a {
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+            }
+
+        nav a:hover {
+             background-color: #45a049;
+        }
+
+        .container {
+            background-color: #2c2c2c;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            max-width: 900px;
+            margin: 80px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #555;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            color: white;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background-color: #444;
+            color: white;
+        }
+
+        .add-button, input[type="submit"] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .add-button:hover, input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #111;
+            margin-top: 30px;
+            color: #aaa;
+        }
+
+        .nav-right { 
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <header>
+        <h1>Course Syllabus Form</h1>
+        <div class="nav-right">
+            <a href="FIRSTPAGE.html">Home</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="/submit_syllabus" method="POST">
+            <table>
+                <tr>
+                    <td>Course Code</td>
+                    <td><input type="text" name="course_code" required></td>
+                </tr>
+                <tr>
+                    <td>Course Category</td>
+                <td><input type="text" name="course_category"></td>
+                </tr>
+                <tr>
+                <td>Course Title</td>
+                    <td><input type="text" name="course_title" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <strong>Teaching Scheme and Credits</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Weekly Load (Hrs)</td>
+                    <td>
+                        <label for="lecture">L</label><input type="number" id="lecture" name="lecture" style="width: 50px;" required>
+                        <label for="tutorial">T</label><input type="number" id="tutorial" name="tutorial" style="width: 50px;">
+                        <label for="lab">Lab</label><input type="number" id="lab" name="lab" style="width: 50px;">
+                        Credits: <input type="text" id="credits" name="credits" style="width: 100px;" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pre-requisites</td>
+                    <td><textarea name="prerequisites" rows="3"></textarea></td>
+                </tr>
+            </table>
+
+            <div class="section">
+                <h2>Course Objectives</h2>
+                <label>Knowledge:</label><textarea name="knowledge_objective" rows="3"></textarea>
+                <label>Skills:</label><textarea name="skills_objective" rows="3"></textarea>
+                <label>Attitude:</label><textarea name="attitude_objective" rows="3"></textarea>
+            </div>
+
+            <div class="section">
+                <h2>Course Outcomes</h2>
+            <div id="outcomes">
+                <input type="text" name="outcome1" placeholder="Outcome 1" required>
+            </div>
+                <button type="button" class="add-button" onclick="addOutcome()">+ Add Outcome</button>
+            </div>
+
+            <div class="section">
+                <input type="submit" value="Submit Syllabus">
+                <a href="update.html" class="add-button">Update</a>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 Syllabus Management System. All Rights Reserved.
+    </footer> 
+</body>
+
+</html>

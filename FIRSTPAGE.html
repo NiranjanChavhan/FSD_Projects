@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Syllabus Management System</title>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2c2f33; /* Dark grey background */
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        /* Header Styles */
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #23272a; /* Slightly darker grey */
+            padding: 10px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background-color: black;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover {
+            background-color: grey;
+        }
+
+        /* Center the main title */
+        .center-heading {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 48px;
+            text-align: center;
+            margin: 40px 0;
+            color: white;
+        }
+
+        /* Table Styles */
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        th, td {
+            border: 1px solid grey;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #3a3d41;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #2e3135;
+        }
+
+        tr:hover {
+            background-color: grey;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Footer Adjustment */
+        footer {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            background-color: #23272a;
+            color: white;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        /* Ensure the page content isn't blocked */
+        body::after {
+            content: "";
+            display: block;
+            height: 50px; /* Space for footer */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <h1>Syllabus Management System by students of MIT WPU</h1>
+        <nav>
+            <a href="SECONDPAGE.html">Create Syllabus</a>
+        </nav>
+    </header>
+
+    <!-- Centered Heading -->
+    <div class="center-heading">
+        Syllabus Management System
+    </div>
+
+    <!-- Course Information in Tabular Form -->
+    <table>
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Year/Semester</th>
+                <th>Subjects</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>B.Tech (Computer Science)</td>
+                <td>First Year</td>
+                <td>
+                    <ul>
+                        <li>Mathematics I & II</li>
+                        <li>Engineering Physics</li>
+                        <li>Engineering Chemistry</li>
+                        <li>Basic Electrical Engineering</li>
+                        <li>Engineering Mechanics</li>
+                        <li>C/C++ Programming</li>
+                        <li>Environmental Studies</li>
+                        <li>Workshop Practice</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>B.Tech (Computer Science)</td>
+                <td>Core Years</td>
+                <td>
+                    <ul>
+                        <li>Data Structures</li>
+                        <li>Operating Systems</li>
+                        <li>Database Management Systems</li>
+                        <li>Computer Networks</li>
+                        <li>Software Engineering</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Cloud Computing</li>
+                        <li>Cybersecurity</li>
+                        <li>Project Work and Internship</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>BBA</td>
+                <td>First Year</td>
+                <td>
+                    <ul>
+                        <li>Principles of Management</li>
+                        <li>Business Communication</li>
+                        <li>Financial Accounting</li>
+                        <li>Business Statistics</li>
+                        <li>Microeconomics</li>
+                        <li>Organizational Behavior</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Law (LLB/BA LLB)</td>
+                <td>Final Year</td>
+                <td>
+                    <ul>
+                        <li>Taxation Law</li>
+                        <li>Labour and Industrial Law</li>
+                        <li>Intellectual Property Law</li>
+                        <li>Cyber Law</li>
+                        <li>Moot Court</li>
+                        <li>Research Project</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>MBA</td>
+                <td>Core Subjects</td>
+                <td>
+                    <ul>
+                        <li>Financial Accounting</li>
+                        <li>Marketing Management</li>
+                        <li>Managerial Economics</li>
+                        <li>Corporate Finance</li>
+                        <li>Strategic Management</li>
+                        <li>Leadership and Team Management</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>B.Sc. (Computer Science)</td>
+                <td>All Years</td>
+                <td>
+                    <ul>
+                        <li>Mathematics for Computer Science</li>
+                        <li>Digital Logic</li>
+                        <li>Web Programming</li>
+                        <li>Software Development</li>
+                        <li>Final Year Project</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>M.Tech</td>
+                <td>Specializations</td>
+                <td>
+                    <ul>
+                        <li>Advanced Algorithms</li>
+                        <li>Machine Learning</li>
+                        <li>Distributed Systems</li>
+                        <li>Robotics and Automation</li>
+                        <li>Thesis/Dissertation Work</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        &copy; 2024 Syllabus Management System. All Rights Reserved.
+    </footer>
+</body>
+</html>
